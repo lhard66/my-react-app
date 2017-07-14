@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Clock from './Clock';
 
 const usr = {
   firstName: "jim",
@@ -25,6 +26,9 @@ class App extends Component {
         {/* jsx的基本使用 */}
         <p>
            Hello world,{formatName(usr)}!
+        </p>
+        <p>
+          <Clock />
         </p>
       </div>
     );
