@@ -2,15 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Clock from './Clock';
-
-const usr = {
-  firstName: "jim",
-  lastName: "tomato"
-}
-
-function formatName(usr) {
-  return usr.firstName + ' - ' + usr.lastName;
-}
+import formatName from './FormateName';
 
 class App extends Component {
   render() {
@@ -25,7 +17,7 @@ class App extends Component {
         </p>
         {/* jsx的基本使用 */}
         <p>
-           Hello world,{formatName(usr)}!
+           Hello world,{formatName({ firstName: "lucifor", lastName: "ff91" })}
         </p>
         <p>
           <Clock />
