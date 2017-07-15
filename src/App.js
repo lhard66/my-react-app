@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Clock from './Clock';
 import formatName from './FormateName';
+import EventBase from './components/EventBase';
 
 class App extends Component {
   render() {
@@ -21,6 +22,9 @@ class App extends Component {
         </p>
         <p>
           <Clock />
+        </p>
+        <p>
+          <EventBase />
         </p>
       </div>
     );
