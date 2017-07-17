@@ -5,7 +5,9 @@ import Clock from './Clock';
 import formatName from './FormateName';
 import EventBase from './components/EventBase';
 import EleToggle from './components/IfBase';
+import NumberList from './components/ForBase';
 
+const numbers = [1, 2, 3, 4, 5];
 class App extends Component {
   render() {
     return (
@@ -29,6 +31,10 @@ class App extends Component {
         </p>
         <p>
           <EleToggle />
+        </p>
+        <p>
+          <h3>循环：</h3>
+          <NumberList numbers={numbers}/>
         </p>
       </div>
     );
