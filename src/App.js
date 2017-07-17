@@ -4,6 +4,7 @@ import './App.css';
 import Clock from './Clock';
 import formatName from './FormateName';
 import EventBase from './components/EventBase';
+import EleToggle from './components/IfBase';
 
 class App extends Component {
   render() {
@@ -25,6 +26,9 @@ class App extends Component {
         </p>
         <p>
           <EventBase />
+        </p>
+        <p>
+          <EleToggle />
         </p>
       </div>
     );
