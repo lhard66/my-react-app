@@ -7,6 +7,7 @@ import EventBase from './components/EventBase';
 import EleToggle from './components/IfBase';
 import NumberList from './components/ForBase';
 import NameForm from './components/FormBase';
+import Reservation from './components/FormBase2';
 
 const numbers = [1, 2, 3, 4, 5];
 class App extends Component {
@@ -39,6 +40,9 @@ class App extends Component {
         </p>
         <p>
           <NameForm />
+        </p>
+        <p>
+          <Reservation />
         </p>
       </div>
     );
