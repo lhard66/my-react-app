@@ -6,6 +6,7 @@ import formatName from './FormateName';
 import EventBase from './components/EventBase';
 import EleToggle from './components/IfBase';
 import NumberList from './components/ForBase';
+import NameForm from './components/FormBase';
 
 const numbers = [1, 2, 3, 4, 5];
 class App extends Component {
@@ -35,6 +36,9 @@ class App extends Component {
         <p>
           <h3>循环：</h3>
           <NumberList numbers={numbers}/>
+        </p>
+        <p>
+          <NameForm />
         </p>
       </div>
     );
