@@ -9,6 +9,7 @@ import NumberList from './components/ForBase';
 import NameForm from './components/FormBase';
 import Reservation from './components/FormBase2';
 import Calculator from './components/temperatureCalc/Calculator';
+import SignUpDialog from './components/Combination';
 
 const numbers = [1, 2, 3, 4, 5];
 class App extends Component {
@@ -47,6 +48,9 @@ class App extends Component {
         </p>
         <div className="App-border">
           <Calculator />
+        </div>
+        <div>
+          <SignUpDialog />
         </div>
       </div>
     );
