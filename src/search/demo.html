@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dom</title>
+</head>
+<body>
+	<div class="FilterableProductTable">
+		<form class="searchBar">
+			<input type="text" placeholder="Search...">
+			<p>
+				<input type="checkbox">
+				<span>Only show products in stock</span>
+			</p>
+		</form>
+		<table class="ProductTable">
+			<tr>
+				<th>Name</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<th colspan="2" class="ProductCategoryRow">Sproting Goods</th>
+			</tr>
+			<tr class="ProductRow">
+				<td>Football</td>
+				<td>$49.99</td>
+			</tr>
+			<tr class="ProductRow">
+				<td>Baseball</td>
+				<td>$100.99</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
+
+<!-- FilterableProductTable (橙色): 包含了整个例子
+SearchBar (蓝色): 接受所有的用户输入
+ProductTable (绿色): 根据用户输入过滤并展示数据集合
+ProductCategoryRow (绿松石色): 展示每个分类的标题
+ProductRow (红色): 用行来展示每个产品 -->
