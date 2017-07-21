@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Clock from './Clock';
-import formatName from './FormateName';
-import EventBase from './components/EventBase';
-import EleToggle from './components/IfBase';
-import NumberList from './components/ForBase';
-import NameForm from './components/FormBase';
-import Reservation from './components/FormBase2';
-import Calculator from './components/temperatureCalc/Calculator';
-import SignUpDialog from './components/Combination';
+// import Clock from './Clock';
+// import formatName from './FormateName';
+// import EventBase from './components/EventBase';
+// import EleToggle from './components/IfBase';
+// import NumberList from './components/ForBase';
+// import NameForm from './components/FormBase';
+// import Reservation from './components/FormBase2';
+// import Calculator from './components/temperatureCalc/Calculator';
+// import SignUpDialog from './components/Combination';
+import FilterableProductTable from './search/FilterableProductTable';
 
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
+
 class App extends Component {
   render() {
     return (
@@ -23,7 +25,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code>
         </p>
-        {/* jsx的基本使用 */}
+        {/* jsx的基本使用
         <p>
            Hello world,{formatName({ firstName: "lucifor", lastName: "ff91" })}
         </p>
@@ -52,6 +54,8 @@ class App extends Component {
         <div>
           <SignUpDialog />
         </div>
+        */}
+        <FilterableProductTable/>
       </div>
     );
   }
