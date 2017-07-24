@@ -13,12 +13,41 @@ var PRODUCTS = [
 ];
 
 class FilterableProductTable extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			filterText: '',
+			inStockOnly: false,
+		}
+
+		this.handleFilterTextInput = this.handleFilterTextInput.bind(this);
+		this.handleInStockInput = this.handleInStockInput.bind(this);
+	}
+
+	handleFilterTextInput(filterText) {
+		this.setState({
+			filterText: filterText,
+		});
+	}
+
+	handleInStockInput(inStockOnly) {
+		this.setState({
+			inStockOnly: inStockOnly
+		});
+	}
 	render() {
 		return (
 			<div className="FilterableProductTable">
-				<SearchBar />
+				<SearchBar 
+					onFilterTextInput={this.handleFilterTextInput}
+					onInStockInput={this.handleInStockInput}
+					inStockOnly={this.state.inStockOnly}
+					filterText={this.state.filterText}
+				/>
 				<ProductTable
 					products={PRODUCTS}
+					filterText={this.state.filterText}
+					inStockOnly={this.state.inStockOnly}
 				/>
 			</div>
 		);

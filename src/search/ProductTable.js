@@ -7,6 +7,11 @@ class ProductTable extends Component {
 		let rows = [];
 		let lastCategory = null;
 		this.props.products.forEach(item => {
+			// 筛选
+			if (item.name.indexOf(this.props.filterText) === -1 || (!item.stocked && this.props.inStockOnly)) {
+				return;
+			}
+
 			if (item.category !== lastCategory) {
 				rows.push(<ProductCategoryRow category={item.category} key={item.category} />);
 			}
