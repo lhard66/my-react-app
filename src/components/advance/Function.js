@@ -15,7 +15,7 @@ class Func extends Component {
 	render() {
 		return (
 			<Repeat numTimes={3}>
-				{(index) => <div>This is item {index} in the list</div>}
+				{(index) => <div key={index}>This is item {index} in the list</div>}
 			</Repeat>
 		)
 	}
