@@ -4,8 +4,8 @@ class ProductRow extends Component {
 	render() {
 		return (
 			<tr className="ProductRow">
-				<td>Baseball</td>
-				<td>$100.99</td>
+				<td>{this.props.product.name}</td>
+				<td>{this.props.product.price}</td>
 			</tr>
 		);
 	}
