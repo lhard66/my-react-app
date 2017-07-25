@@ -12,6 +12,7 @@ import './App.css';
 // import SignUpDialog from './components/Combination';
 import Func from './components/advance/Function';
 import FilterableProductTable from './search/FilterableProductTable';
+import Greeting from './components/advance/PropTypes';
 
 // const numbers = [1, 2, 3, 4, 5];
 
@@ -59,6 +60,7 @@ class App extends Component {
         </div>
         */}
         <FilterableProductTable/>
+        <Greeting name="jim"/>
       </div>
     );
   }
