@@ -14,6 +14,7 @@ import Func from './components/advance/Function';
 import FilterableProductTable from './search/FilterableProductTable';
 import Greeting from './components/advance/PropTypes';
 import CustomTextInput from './components/advance/Ref';
+import NameForm from './components/advance/NoControl';
 
 // const numbers = [1, 2, 3, 4, 5];
 
@@ -63,6 +64,7 @@ class App extends Component {
         <FilterableProductTable/>
         <Greeting name="jim"/>
         <CustomTextInput/>
+        <NameForm/>
       </div>
     );
   }
