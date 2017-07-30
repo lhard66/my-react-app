@@ -15,6 +15,7 @@ import FilterableProductTable from './search/FilterableProductTable';
 import Greeting from './components/advance/PropTypes';
 import CustomTextInput from './components/advance/Ref';
 import NameForm from './components/advance/NoControl';
+import CounterButton from './components/advance/Performance.js'
 
 // const numbers = [1, 2, 3, 4, 5];
 
@@ -65,6 +66,7 @@ class App extends Component {
         <Greeting name="jim"/>
         <CustomTextInput/>
         <NameForm/>
+        <CounterButton/>
       </div>
     );
   }
